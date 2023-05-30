@@ -1,7 +1,7 @@
-package me.simon.mixins;
+package fr.juke.mixins;
 
-import me.simon.commands.util.TextFormatter;
-import me.simon.config.Config;
+import fr.juke.config.Config;
+import fr.juke.commands.util.TextFormatter;
 import net.minecraft.text.LiteralText;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;

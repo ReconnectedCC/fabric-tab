@@ -1,10 +1,9 @@
-package me.simon.commands.util;
+package fr.juke.commands.util;
 
 import com.mojang.brigadier.suggestion.SuggestionProvider;
 import com.mojang.brigadier.suggestion.Suggestions;
 import com.mojang.brigadier.suggestion.SuggestionsBuilder;
-import me.simon.Main;
-import me.simon.config.Config;
+import fr.juke.config.Config;
 import net.minecraft.server.command.ServerCommandSource;
 
 import java.util.Arrays;

@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "fr.juke.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "PlayerListMixin",
+    "LiteralTextMixin",
+    "PlayerManagerMixin",
+    "TranslatableTextMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

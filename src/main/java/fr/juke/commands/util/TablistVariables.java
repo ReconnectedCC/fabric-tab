@@ -1,4 +1,4 @@
-package me.simon.commands.util;
+package fr.juke.commands.util;
 
 import net.minecraft.server.MinecraftServer;
 

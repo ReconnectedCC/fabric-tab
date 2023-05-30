@@ -1,4 +1,4 @@
-package me.simon.config;
+package fr.juke.config;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -38,7 +38,7 @@ public class Config {
         try (FileReader reader = new FileReader(config1)) {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             Config config = gson.fromJson(reader, Config.class);
-            this.enableColor = config.enableColor;
+//            this.enableColor = config.enableColor;
             this.header = config.header;
             this.footer = config.footer;
             this.motd = config.motd;
