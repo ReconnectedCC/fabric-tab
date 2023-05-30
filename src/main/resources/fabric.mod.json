@@ -3,12 +3,12 @@
   "id": "fabric-tab",
   "version": "${version}",
   "name": "fabric-tab",
-  "description": "adds classic bukkit style color chat and tablist headers and footers",
+  "description": "very basic colored tablist header and footer and motd configuration for fabric servers",
   "authors": [
     "catpissbonghits"
   ],
   "contact": {},
-  "license": "GGPLv3.0",
+  "license": "GPLv3.0",
   "icon": "assets/fabric-tab/icon.png",
   "environment": "*",
   "entrypoints": {

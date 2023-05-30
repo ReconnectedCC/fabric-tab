@@ -4,9 +4,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "PlayerListMixin",
-    "LiteralTextMixin",
-    "PlayerManagerMixin",
-    "TranslatableTextMixin"
+    "PlayerManagerMixin"
   ],
   "client": [],
   "server": [],

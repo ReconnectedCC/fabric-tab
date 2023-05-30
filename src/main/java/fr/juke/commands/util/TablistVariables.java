@@ -10,23 +10,26 @@ public class TablistVariables {
     private static int playerCount = 0;
 
 
-    public static void onTick(MinecraftServer minecraftServer){
+    public static void onTick(MinecraftServer minecraftServer) {
         playerCount = minecraftServer.getCurrentPlayerCount();
         mspt = (int) minecraftServer.getTickTime();
-        if(mspt != 0) {
+        if (mspt != 0) {
             tps = 1000 / mspt;
         }
     }
 
-    public static int getMspt(){
+    public static int getMspt() {
         return mspt;
     }
-    public static int getTps(){
+
+    public static int getTps() {
         return Math.min(tps, 20);
     }
-    public static int getPlayerCount(){
+
+    public static int getPlayerCount() {
         return playerCount;
     }
+
     public static String getUptime() {
         String s = "";
         int time = (int) ManagementFactory.getRuntimeMXBean().getUptime() / 1000;
