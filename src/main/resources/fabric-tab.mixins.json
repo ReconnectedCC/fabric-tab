@@ -3,7 +3,6 @@
   "package": "fr.juke.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "PlayerListMixin",
     "PlayerManagerMixin"
   ],
   "client": [],

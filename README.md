@@ -12,10 +12,18 @@ The config file is located in the config directory (`config/fabric-tab.json`) an
 
 ```JSON
 {
-  "configVersion": 1,
+  // used internally do not change
+  "configVersion": 2,
+  // header of the player list (any string)
   "header": "§7§l§oCOOL#N      SERVER       #N#N§6very cool§f#N",
+  // footer of the player list (any string)
   "footer": "#N§b#TPS tps - #MSPT mspt - #PLAYERCOUNT players - #UPTIME uptime#N",
-  "motd": "§7§oWelcome to the server.§f"
+  // sent when logging in (any string)
+  "motd": "§7§oWelcome to the server.§f",
+  // amount of game ticks between each header/footer send (any number above 1)
+  "refreshTickInterval": 20,
+  // enable or disable the entire mod functionality (a boolean)
+  "enabled": true
 }
 ```
 
