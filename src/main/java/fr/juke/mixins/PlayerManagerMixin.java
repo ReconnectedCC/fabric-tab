@@ -6,6 +6,7 @@ import net.minecraft.network.ClientConnection;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.PlayerListHeaderS2CPacket;
 import net.minecraft.server.PlayerManager;
+import net.minecraft.server.network.ConnectedClientData;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Mixin;
@@ -46,7 +47,7 @@ public abstract class PlayerManagerMixin {
     }
 
     @Inject(at = @At("TAIL"), method = "onPlayerConnect")
-    public void onPlayerConnect(ClientConnection connection, ServerPlayerEntity player, CallbackInfo ci) {
+    public void onPlayerConnect(ClientConnection connection, ServerPlayerEntity player, ConnectedClientData clientData, CallbackInfo ci) {
         if (
                 Config.INSTANCE.enabled
                         && Config.INSTANCE.motd != null // check if set in config file

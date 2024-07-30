@@ -11,7 +11,7 @@ public class TablistVariables {
 
   public static void onTick(MinecraftServer minecraftServer) {
     playerCount = minecraftServer.getCurrentPlayerCount();
-    mspt = (int) minecraftServer.getTickTime();
+    mspt = (int) minecraftServer.getAverageTickTime();
     if (mspt != 0) {
       tps = 1000 / mspt;
     }
